@@ -1,3 +1,27 @@
 body {
-    background-color: aliceblue;
+ background-color: aliceblue;
+ margin: 0 auto;
+ width: 800px;
+}
+h1{
+    color: #e24f3b;
+    text-align: center;
+}
+h2{
+    color: #e24f3b;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #e24f3b;
+}
+p{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+h5{
+    margin: 0 auto;
+    width: 800px;;
 }
