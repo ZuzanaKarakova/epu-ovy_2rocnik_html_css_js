@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(216, 211, 194);
+}
+
+ul,ol{
+    color: rgb(0, 48, 14);
+}
+
+.filmy{
+    color: rgb(83, 26, 0);
+}
+
+.neviem{
+    color: rgb(0, 28, 70);
+}
+
+.koniec{
+    color: rgb(46, 0, 48);
+}
+
+.prvy{
+    font-size: larger;
+    color: rgb(255, 230, 0);
+}
+
+.druhy{
+    font-family: cursive;
+    color: rgb(49, 75, 0);
+}
+
+.treti{
+    color: rgb(160, 139, 109);
+}
+
+.stvrty{
+    border: 3px;
+    padding: 20px;
+    background-color: rgb(179, 143, 143);
+    color: rgb(26, 26, 90);
+}
+
+#unikat{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    color: rgb(255, 0, 234);
+}
+
+h3{
+    font-size: x-large;
+}
+
+#samostatny{
+    font-size: 67px;
+    color: red;
+}
+
+.wow{
+    text-transform: uppercase;
+}
+
+#cerveny{
+    color: rgb(187, 0, 0);
+    text-transform: capitalize;
+}
+
+.traja{
+    text-transform: uppercase;
+}
