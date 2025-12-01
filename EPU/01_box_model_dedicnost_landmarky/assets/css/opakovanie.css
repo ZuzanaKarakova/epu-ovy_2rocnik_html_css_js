@@ -1,19 +1,11 @@
-
-
-h1{
-    font-size: 35px;
-    color: rgb(37, 222, 0);
+.nadpis{
+    color: rgb(17, 162, 17);
 }
 
-h2{
-    font-size: 35px;
-}
-
-h3{
+h1, h2, h3{
     font-size: 35px;
 }
 
 #odstavec{
-    border: 5px solid;
-    border-color: rgb(21, 90, 12);
+    border: 5px solid green;
 }
