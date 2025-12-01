@@ -1,0 +1,19 @@
+
+
+h1{
+    font-size: 35px;
+    color: rgb(37, 222, 0);
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+#odstavec{
+    border: 5px solid;
+    border-color: rgb(21, 90, 12);
+}
