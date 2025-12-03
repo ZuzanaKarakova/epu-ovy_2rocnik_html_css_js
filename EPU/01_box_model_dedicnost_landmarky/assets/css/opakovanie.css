@@ -1,0 +1,11 @@
+.nadpis{
+    color: rgb(17, 162, 17);
+}
+
+h1, h2, h3{
+    font-size: 35px;
+}
+
+#odstavec{
+    border: 5px solid green;
+}
