@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+:root{
+    --prva-farba: #c67bb2;
+    --druha-farba: #747273;
+    --tretia-farba: #686768;
+    --stvrta-farba: #bababa;
+    --piata-farba: #ffffff;
+    --siesta-farba: #111111;
+}
+
+body{
+    margin: auto;
+    width: 600px;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    font-weight: 100;
+    color: var(--piata-farba);
+}
+
+
+.fotka{
+    width: 550px;
+    margin-bottom: 95px;
+}
+
+h3{
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    color: var(--druha-farba);
+    margin-top: 70px;
+}
+
+.nadpis{
+color: var(--prva-farba);
+font-family: "Tinos", serif;
+}
+
+.skola{
+color: var(--siesta-farba);
+font-family: "Tinos", serif;
+}
+
+.gpa{
+color: var(--tretia-farba);
+font-family: "Tinos", serif;
+}
+
+p{
+color: var(--stvrta-farba);
+}
+
+span{
+    border-bottom: var(--druha-farba) solid 2px;
+    border-width: 1px;
+}
+
+s{
+    color: var(--stvrta-farba);
+    text-decoration: none;
+}
