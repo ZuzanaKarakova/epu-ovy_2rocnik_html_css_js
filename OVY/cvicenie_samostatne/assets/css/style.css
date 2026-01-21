@@ -31,9 +31,7 @@ h3{
     font-size: 14px;
     font-family: "Raleway", sans-serif;
     color: var(--druha-farba);
-    margin-top: 70px;
 }
-
 .nadpis{
 color: var(--prva-farba);
 font-family: "Tinos", serif;
@@ -62,3 +60,5 @@ s{
     color: var(--stvrta-farba);
     text-decoration: none;
 }
+
+
