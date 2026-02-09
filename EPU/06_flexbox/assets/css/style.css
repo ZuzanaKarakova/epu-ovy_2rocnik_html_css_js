@@ -10,6 +10,10 @@ main{
     margin: 0;
     border: 2px orange solid;   
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 p{
@@ -22,25 +26,24 @@ p{
 .prvy{
     background-color: plum;
     order: 2;
-    align-self: flex-end;
 }
 
 .druhy{
     background-color: burlywood;
     order: 3;
-
 }
 
 .treti{
     background-color: cyan;
-    order: 1;
-
+    order: 4;
 }
 
 .stvrty{
     background-color: lightcoral;
+    order: 5;
 }
 
 .piaty{
     background-color: lightgreen;
+    order: 1;
 }
