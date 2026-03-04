@@ -31,6 +31,10 @@
 
 /* TODO: Základné štýly pre body */
 
+h1,h2,h3{
+font-family: var(--font-nadpis); 
+}
+
 body{
   color: var(--text-tmavy);
   background-color: var(--pozadie-biela);
@@ -38,9 +42,9 @@ body{
   font-size: var(--medzera-s);
 }
 
-
+/* Odstránenie guličiek zo všetkých zoznamov */
 ul{
-  list-style: none;  /* Odstránenie guličiek zo všetkých zoznamov */
+  list-style: none;  
 }
 
 
@@ -49,24 +53,67 @@ a{
   color: inherit; /*dedenie farby od rodiča */
 }
 
-
-h1,h2,h3{
-  margin: 0; /* Resetovanie vonkajších okrajov v nadpisoch */
-}
+/* Resetovanie vonkajších okrajov v nadpisoch */
 
 /* TODO: Container trieda (max-width: 1200px) */
 
+.kontajner{
+  padding: var(--medzera-s);
+}
 
 /* TODO: Header s logom */
 .header{
   background-color: var(--primarna);
   color: var(--pozadie-svetla);
+  text-align: center;
+}
+
+.header__obsah{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medzera-s);
 }
 
 /* TODO: Navigácia - mobile: vertikálne, flex */
+.nav__zoznam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--medzera-s);
+  padding: 0;
+}
 
+.nav__polozka{
+  font-weight: 900;
+}
+
+.nav__odkaz{
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+.nav__odkaz:hover{
+  background-color: var(--primarna-tmava);
+}
 
 /* TODO: Hero sekcia */
+.hero{
+  background: linear-gradient(137deg, var(--primarna),var(--primarna-tmava));
+  color: var(--pozadie-biela);
+  text-align: center;
+  padding: var(--medzera-xl);
+}
+
+.hero__nadpis{
+margin-bottom: var(--medzera-m);
+}
+
+.hero__text{
+margin-bottom: var(--medzera-m);
+}
+
 
 
 /* TODO: Benefits sekcia - Grid (mobile: 1 stĺpec) */
