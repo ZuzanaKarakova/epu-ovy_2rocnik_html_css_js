@@ -21,7 +21,7 @@ header, nav, article, aside, footer {
     padding: 1.2em; 
     background: #3b9ae1;
     border-radius: .5em;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 header  { background: #3b9ae1;}
@@ -64,41 +64,37 @@ aside{
         background-color: #aeffae;
     }
         
-    main{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    
     nav{
         order: 1;
-        flex: 4;
+        flex: 0 0 100%;
     }
-    
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
     
     article{
         order: 2;
-        flex: 1;
+        flex: 2;
     }
     
     aside{
         order: 3;
         flex: 1;
     }
-    ul{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    }
 
-
+}
 
     /*DESKTOP*/
     @media (min-width: 1024px) {
         /* Štýly, ktoré sa aplikujú, AK je obrazovka aspoň 768px široká */
-        
-        
         body{
             background-color: rgb(137, 188, 255);
+        }
+        main{
+ 
         }
     }
