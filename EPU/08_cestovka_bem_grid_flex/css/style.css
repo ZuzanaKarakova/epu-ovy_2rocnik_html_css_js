@@ -1,0 +1,98 @@
+/* ===========================================
+   MINI CVIČENIE - MEDIA QUERIES
+   Vytvorte responzívnu stránku
+   =========================================== */
+
+/* TODO: Importujte Google Fonts - Montserrat a Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* TODO: CSS Premenné - farby, spacing, fonty */
+:root {
+  /* Farby */
+  --primarna: #2563eb;
+  --primarna-tmava: #1e40af;
+  --akcent: #f97316;
+  --text-tmavy: #1f2937;
+  --text-stredny: #6b7280;
+  --pozadie-biela: #ffffff;
+  --pozadie-svetla: #f9fafb;
+  
+  /* Spacing */
+   --medera-s: 1rem;
+   --medera-m: 1.5rem;
+   --medera-l: 2rem;
+   --medera-xl: 3rem;
+
+  /* Typography */
+  --font-nadpis: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+
+/* TODO: Základné štýly pre body */
+
+body{
+  color: var(--text-tmavy);
+  font-family: var(--font-body);
+  font-size: var(--medera-s);
+  background-color: var(--pozadie-biela);
+}
+
+/* TODO: Container trieda (max-width: 1200px) */
+
+.ul{list-style: none
+
+}
+
+/* TODO: Header s logom */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* TODO: Navigácia - mobile: vertikálne, flex */
+
+h1,h2,h3{
+  margin: 0;
+}
+
+/* TODO: Hero sekcia */
+
+.header{
+  background-color: var(--primarna);
+  color: var(--pozadie-svetla);
+}
+
+/* TODO: Benefits sekcia - Grid (mobile: 1 stĺpec) */
+
+
+/* TODO: Destinácie - Grid (mobile: 1 stĺpec) */
+
+
+/* TODO: Footer - Grid (mobile: 1 stĺpec) */
+
+
+/* TODO: Tlačidlá */
+
+
+/* ==================== TABLET (768px+) ==================== */
+
+@media (min-width: 768px) {
+  /* TODO: Navigácia horizontálne */
+  
+  /* TODO: Benefits Grid 3 stĺpce */
+  
+  /* TODO: Destinácie Grid 2 stĺpce */
+  
+  /* TODO: Footer Grid 2 stĺpce */
+}
+
+
+/* ==================== DESKTOP (1024px+) ==================== */
+
+@media (min-width: 1024px) {
+  /* TODO: Destinácie Grid 3 stĺpce */
+  
+  /* TODO: Väčšie fonty */
+}
