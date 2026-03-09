@@ -37,7 +37,7 @@ font-family: var(--font-nadpis);
 
 body{
   color: var(--text-tmavy);
-  background-color: var(--pozadie-biela);
+  background-color: var(--pozadie-svetla);
   font-family: var(--font-body);
   font-size: var(--medzera-s);
 }
@@ -107,18 +107,41 @@ a{
 }
 
 .hero__nadpis{
-margin-bottom: var(--medzera-m);
+  margin-bottom: var(--medzera-l);
 }
 
 .hero__text{
-margin-bottom: var(--medzera-m);
+  margin-bottom: var(--medzera-l);
 }
 
-
+.hero__tlacidlo{
+  background-color: var(--akcent);
+  padding: 3%;
+  border-radius: 6.5px;
+}
 
 /* TODO: Benefits sekcia - Grid (mobile: 1 stĺpec) */
 
+.benefity__nadpis{
+  text-align: center;
+  padding: 15px;
+}
 
+.benefity__polozky{
+  background-color: var(--pozadie-biela);
+  padding: 15px;
+  margin: 15px 0px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.benefity_nazov{
+  color: var(--primarna);
+}
+
+.benefity__text{
+  color: var(--text-stredny);
+}
 /* TODO: Destinácie - Grid (mobile: 1 stĺpec) */
 
 
