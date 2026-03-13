@@ -172,11 +172,45 @@ a{
 
 .destinacie__text{
   color: var(--text-stredny);
+  font-size: 17px;
 }
 
 .destinacie__cena{
   color: var(--akcent);
 }
+
+/* TODO: Footer - Grid (mobile: 1 stĺpec) */
+
+.footer{
+  background-color: var(--text-tmavy);
+  padding: 40px;
+}
+
+.footer__nadpis{
+  font-weight: bold;
+  color: var(--akcent);
+}
+
+.footer__text{
+  font-size: 17px;
+  color: var(--pozadie-svetla);
+}
+
+.footer__kontakt{
+  color: var(--pozadie-svetla);
+  font-size: 17px;
+}
+
+.koniec{
+  color: var(--text-stredny);
+  font-size: 17px;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+/* TODO: Tlačidlá */
 
 .tlacidlo{
   display: inline-block;
@@ -188,11 +222,6 @@ a{
   border: none;
   outline: none;
 }
-
-/* TODO: Footer - Grid (mobile: 1 stĺpec) */
-
-
-/* TODO: Tlačidlá */
 
 
 /* ==================== TABLET (768px+) ==================== */
