@@ -144,6 +144,50 @@ a{
 }
 /* TODO: Destinácie - Grid (mobile: 1 stĺpec) */
 
+.destinacie{
+  background-color: var(--pozadie-biela);
+}
+
+.destinacie__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.destinacia{
+  background-color: var(--pozadie-biela);
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.destinacie__nadpis{
+  text-align: center;
+  padding: 15px;
+}
+
+.destinacie__nazov{
+  color: var(--text-tmavy)
+}
+
+.destinacie__text{
+  color: var(--text-stredny);
+}
+
+.destinacie__cena{
+  color: var(--akcent);
+}
+
+.tlacidlo{
+  display: inline-block;
+  background-color: var(--akcent);
+  color: var(--pozadie-biela);
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
 
 /* TODO: Footer - Grid (mobile: 1 stĺpec) */
 
