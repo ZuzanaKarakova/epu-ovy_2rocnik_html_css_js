@@ -156,11 +156,18 @@ a{
 
 .destinacia{
   background-color: var(--pozadie-biela);
-  padding: 15px;
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.destinacie__popis{
+  padding: 15px;
+}
+
+img{
+  width: 100%;
+  border-radius: inherit;
+}
 .destinacie__nadpis{
   text-align: center;
   padding: 15px;
@@ -206,6 +213,7 @@ a{
   font-size: 17px;
   text-align: center;
   padding: 15px;
+  border-top: solid var(--text-stredny) 2px;
 }
 
 
