@@ -115,10 +115,23 @@ a{
 }
 
 .hero__tlacidlo{
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
   background-color: var(--akcent);
-  padding: 3%;
-  border-radius: 6.5px;
+  color: var(--pozadie-biela);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
 }
+
+
+.hero__tlacidlo:hover {
+  background-color: #ea580c;
+  transform: translate(-2px);
+}
+
 
 /* TODO: Benefits sekcia - Grid (mobile: 1 stĺpec) */
 
@@ -234,14 +247,57 @@ img{
 
 /* ==================== TABLET (768px+) ==================== */
 
-@media (min-width: 768px) {
-  /* TODO: Navigácia horizontálne */
-  
-  /* TODO: Benefits Grid 3 stĺpce */
-  
-  /* TODO: Destinácie Grid 2 stĺpce */
-  
-  /* TODO: Footer Grid 2 stĺpce */
+@media (min-width: 768px) { 
+/* TODO: Navigácia horizontálne */
+.nav__zoznam{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.header__obsah{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TODO: Benefits Grid 3 stĺpce */
+.benefity__mriezka{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: var(--medzera-l);
+}
+
+.benefity{
+  padding: var(--medzera-xl) 0;
+}
+
+.benefity__nadpis{
+  margin-bottom: var(--medzera-xl);
+}
+
+/* TODO: Destinácie Grid 2 stĺpce */
+.destinacie__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* TODO: Footer Grid 2 stĺpce */
+.footer__prvy{
+  display: grid;
+  justify-content: start;
+}
+.footer__druhy{
+  display: grid;
+  justify-content: end;
+}
+
+.footer__mriezka{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 }
 
 
