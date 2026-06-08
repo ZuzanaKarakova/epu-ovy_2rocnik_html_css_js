@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Kalkulátor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚖️ BMI Kalkulátor</h1>
+        
+        <!-- FORMULÁR S FLEXBOXOM -->
+        <div class="formular">
+            <div class="input-box">
+                <label for="vyska">Tvoja výška (cm):</label>
+                <input type="number" id="vyska" placeholder="napr. 175">
+            </div>
+            
+            <div class="input-box">
+                <label for="hmotnost">Tvoja hmotnosť (kg):</label>
+                <input type="number" id="hmotnost" placeholder="napr. 70">
+            </div>
+            
+            <button id="vypocitaj">Vypočítaj BMI</button>
+        </div>
+        
+        <!-- VÝSLEDOK (SKRYTÝ NA ZAČIATKU) -->
+        <div class="vysledok" id="vysledok">
+            <h2>Tvoj výsledok</h2>
+            <div class="bmi-hodnota" id="bmi-hodnota">0.0</div>
+            <div class="kategoria" id="kategoria">-</div>
+            <p id="popis">-</p>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
