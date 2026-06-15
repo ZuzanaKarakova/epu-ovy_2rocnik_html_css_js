@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog - Záverečné cvičenie</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>💻 Tech Blog</h1>
+            </div>
+            <nav>
+                <a href="#domov">Domov</a>
+                <a href="#o-nas">O nás</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+            <button id="dark-mode-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- FORMULÁR NA PRIDANIE ČLÁNKU -->
+        <section class="formular-sekcia">
+            <h2>Pridať nový článok</h2>
+            <div class="formular">
+                <input type="text" id="nazov" placeholder="Názov článku">
+                <textarea id="obsah" rows="4" placeholder="Obsah článku..."></textarea>
+                <select id="kategoria">
+                    <option value="Technológie">Technológie</option>
+                    <option value="Šport">Šport</option>
+                    <option value="Cestovanie">Cestovanie</option>
+                    <option value="Jedlo">Jedlo</option>
+                </select>
+                <button id="pridat-btn" class="btn-primary">Pridať článok</button>
+            </div>
+        </section>
+
+        <!-- FILTER SEKCIA -->
+        <section class="filter-sekcia">
+            <h3>Filtrovať podľa kategórie:</h3>
+            <div class="filter-buttons">
+                <button class="btn-filter active">Všetky</button>
+                <button class="btn-filter">Technológie</button>
+                <button class="btn-filter">Šport</button>
+                <button class="btn-filter">Cestovanie</button>
+                <button class="btn-filter">Jedlo</button>
+            </div>
+        </section>
+
+        <!-- KONTAJNER NA ČLÁNKY -->
+        <section class="clanky-sekcia">
+            <h2>Články</h2>
+            <div id="pocet-clankov">Počet článkov: 0</div>
+            <div id="clanky-kontajner">
+                <!-- Sem sa budú pridávať články pomocou JavaScriptu -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Tech Blog. Všetky práva vyhradené.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

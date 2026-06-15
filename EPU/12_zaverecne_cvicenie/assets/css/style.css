@@ -1,0 +1,340 @@
+/* ===== RESET A ZÁKLADNÉ NASTAVENIA ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CSS PREMENNÉ ===== */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-light: #ffffff;
+    --bg-dark: #1f2937;
+    --text-light: #1f2937;
+    --text-dark: #f3f4f6;
+    --secondary-bg-light: #f3f4f6;
+    --secondary-bg-dark: #374151;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    background-color: var(--secondary-bg-dark);
+}
+
+body.dark-mode .formular-sekcia,
+body.dark-mode .filter-sekcia {
+    background-color: var(--secondary-bg-dark);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    border-color: #4b5563;
+}
+
+body.dark-mode .clanok {
+    background-color: var(--secondary-bg-dark);
+    border-color: #4b5563;
+}
+
+/* ===== HEADER (FLEXBOX) ===== */
+header {
+    background-color: var(--secondary-bg-light);
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+#dark-mode-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ===== RESPONZÍVNY HEADER (MOBILE) ===== */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ===== FORMULÁR SEKCIA ===== */
+.formular-sekcia {
+    background-color: var(--secondary-bg-light);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease;
+}
+
+.formular-sekcia h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea, select {
+    padding: 0.8rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* ===== FILTER SEKCIA ===== */
+.filter-sekcia {
+    background-color: var(--secondary-bg-light);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease;
+}
+
+.filter-sekcia h3 {
+    margin-bottom: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ===== ČLÁNKY SEKCIA ===== */
+.clanky-sekcia h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+#pocet-clankov {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* ===== GRID ROZLOŽENIE ČLÁNKOV ===== */
+#clanky-kontajner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tablet - 2 stĺpce */
+@media (max-width: 900px) {
+    #clanky-kontajner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile - 1 stĺpec */
+@media (max-width: 600px) {
+    #clanky-kontajner {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== JEDNOTLIVÝ ČLÁNOK ===== */
+.clanok {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+.clanok:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.kategoria {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+}
+
+.clanok h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.clanok p {
+    margin-bottom: 1rem;
+    color: #6b7280;
+}
+
+.btn-zmazat {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-zmazat:hover {
+    background-color: #dc2626;
+}
+
+/* ===== ANIMÁCIE ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--secondary-bg-light);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode footer {
+    background-color: var(--secondary-bg-dark);
+}
+
+/* ===== PRÁZDNY STAV ===== */
+#clanky-kontajner:empty::after {
+    content: "Zatiaľ žiadne články. Pridajte prvý článok! 📝";
+    display: block;
+    text-align: center;
+    padding: 3rem;
+    color: #9ca3af;
+    font-size: 1.2rem;
+    grid-column: 1 / -1;
+}
